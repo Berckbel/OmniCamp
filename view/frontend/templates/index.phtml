@@ -3,7 +3,104 @@
 ?>
 
 <div class="template">
-    <h1><?=$block->getName()?></h1>
-</div>
+    <div class="example-breadcrumbs-1">
+        <span class="label" id="breadcrumb-label">You are here:</span>
+        <ul class="items" aria-labelledby="breadcrumb-label">
+            <li class="item home">
+                <a title="Go to Home Page" href="#">Home</a>
+            </li>
+            <li class="item category1">
+                <a title="Category" href="#">Category</a>
+            </li>
+            <li class="item category2">
+                <a title="Category" href="#">Subcategory</a>
+            </li>
+            <li class="item category3">
+                <strong>Products</strong>
+            </li>
+        </ul>
+    </div>
+    <h1 class="title"><?= __("Ejemplo de estilos") ?></h1>
+    <button type="submit" class="example-button-1 example-button-2"><?= __('Registro') ?></button>
+    <br/>
+    <a href="#" class="example-icon-8"><?= __('icon star') ?></a>
+    <br/>
+    <a href="#" class="example-icon-9" title="font icon instead of the text"><?= __('icon heart') ?></a>
+    <br/>
+    <a href="#" class="example-icon-12"><span>icon-calendar</span></a>
+    <form class="example-form-2" action="#" method="post">
+        <fieldset class="example-form-2-fieldset">
+            <legend class="legend"><span>Personal Information</span></legend><br>
 
-Prueba
+            <div class="field name firstname required">
+                <label class="label" for="firstname"><span>First Name</span></label>
+
+                <div class="control">
+                    <input type="text" id="firstname" name="firstname" value="" title="First Name">
+                </div>
+            </div>
+
+            <div class="field name lastname required">
+                <label class="label" for="lastname"><span>Last Name</span></label>
+
+                <div class="control">
+                    <input type="text" id="lastname" name="lastname" value="" title="Last Name">
+                </div>
+            </div>
+
+            <div class="field required">
+                <label for="email_address" class="label"><span>Email Address</span></label>
+
+                <div class="control">
+                    <input type="email" name="email" id="email_address" value="" title="Email Address">
+                </div>
+            </div>
+
+            <div class="field textarea">
+                <label for="textarea" class="label"><span>Textarea</span></label>
+
+                <div class="control">
+                    <textarea rows="3" cols="5" id="textarea" name="textarea"></textarea>
+                    <div class="note">Please enter your message here</div>
+                </div>
+            </div>
+
+            <div class="field file">
+                <label for="file" class="label"><span>File field</span></label>
+
+                <div class="control">
+                    <input type="file" id="file" value="" name="file">
+                    <div class="note">Please choose your picture here</div>
+                </div>
+            </div>
+
+            <div class="field choice">
+                <input type="radio" id="radio" checked="" value="1" name="radio">
+
+                <label for="radio" class="label"><span>Radiobutton choice</span></label>
+            </div>
+
+            <div class="field choice">
+                <input type="checkbox" id="checkbox" value="1" name="checkbox">
+
+                <label for="checkbox" class="label"><span>Checkbox choice</span></label>
+            </div>
+
+            <div class="field region">
+                <label for="select" class="label"><span>Select</span></label>
+
+                <div class="control">
+                    <select name="select" id="select">
+                        <option value="">Please select</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+            </div>
+
+            
+        </fieldset>
+    </form>
+</div>
